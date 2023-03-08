@@ -1,0 +1,63 @@
+# Menu
+menu:
+  主页: /
+  档案: /archives
+  相册: /gallery
+  相关: /about
+  链接: /link
+  MV:   /video
+rss: /atom.xml
+
+
+# Miscellaneous
+favicon: /favicon.ico
+brand: /images/hexo.svg
+
+# Ocean Video
+# Because I put videos in multiple formats on the same path, I just labeled the path here.
+ocean:
+  overlay: true
+  path: /images/ocean/
+  brand: /images/hexo-inverted.svg
+
+# Content
+excerpt_link: Read More...
+
+# MIIT ICP/IP/DOMAIN
+beian:
+  enable: true
+  number: chongqing
+  url: 839818374@qq.com
+
+# Tags
+show_count: false
+
+# Toc
+toc: true
+
+# fancybox
+fancybox: true
+
+# 是否显示复制按钮
+show_copy_btn: true
+
+# Gitalk
+gitalk:
+  enable: true # true
+  clientID: f63d9bcb9303126c5449 # GitHub Application Client ID
+  clientSecret: ee5a0a58260421006772e80c4cd1898ddefa38f1 # Client Secret
+  repo: gittalk_ware # Repository name
+  owner: pansansui # GitHub ID
+  admin: pansansui # GitHub ID
+
+# Valine
+valine:
+  enable: false # true
+  el: 'vcomments'
+  appId: brl5ITQ0fxCHM3Lrx1thVjFB-gzGzoHsz
+  appKey: jolAsF6hc3mV9iGmPsVuU8mp
+  notify: false
+  verify: true
+  avatar: 'hide'
+  pageSize: '10'
+  placeholder: '请输入...'
