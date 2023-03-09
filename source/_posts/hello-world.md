@@ -1,6 +1,6 @@
 ---
 photos: [
-        ["java.jpg"]
+        ["/images/hexo.svg"]
         ]
 title: Hello pansansui 
 ---

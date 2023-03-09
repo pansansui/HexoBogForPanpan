@@ -1,14 +1,18 @@
 <%- partial('_partial/head') %>
 
-<body>
-  <main class="content">
-    <%- body %>
-    <%- partial('_partial/footer') %>
-  </main>
-  <aside class="sidebar">
-    <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-  </aside>
-  <%- partial('_partial/after-footer') %>
-</body>
+  <body>
+    <div class="musicPlayer">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
+        src="//music.163.com/outchain/player?type=0&id=8222072696&auto=1&height=430"></iframe>
+    </div>
+    <main class="content">
+      <%- body %>
+        <%- partial('_partial/footer') %>
+    </main>
+    <aside class="sidebar">
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    </aside>
+    <%- partial('_partial/after-footer') %>
+  </body>
 
-</html>
+  </html>
