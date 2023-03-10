@@ -204,22 +204,43 @@
     $sidebar.removeClass('on');
   });
 
-  // 给网易云播放器绑定事件
-
-  $('.musicPlayer').hover(function () {
-    $('.musicPlayer').animate({
-      width: 330,
-      height: 400,
-      opacity: 1
-    }, 'slow')
-  }, function () {
-    $('.musicPlayer').animate({
-      width: 110,
-      height: 100,
-      opacity: 0.4
-    }, 'slow')
-  })
-
+  // 给网易云播放器绑定事件,pc绑定hover，手机绑定click
+  if (!isMobile.any()) {
+    $('.musicPlayer').stop(true, true).hover(function () {
+      $('.musicPlayer').animate({
+        width: 330,
+        height: 400,
+        opacity: 1
+      }, 'slow');
+    }, function () {
+      $('.musicPlayer').stop(true, false).animate({
+        width: 110,
+        height: 100,
+        opacity: 0.4
+      }, 'slow');
+    }
+    );
+  } else {
+    var issmall = true;
+    $('.musicPlayer').click(function () {
+      if (issmall) {
+        $('.musicPlayer').stop(true, true).animate({
+          width: 330,
+          height: 400,
+          opacity: 1
+        }, 'slow');
+      } else {
+        $('.musicPlayer').stop(true, false).animate({
+          width: 110,
+          height: 100,
+          opacity: 0.4
+        }, 'slow');
+      };
+      issmall = !isMobile;
+    }
+    );
+  };
+  //style="z-index: 9;position: fixed;opacity: 0.4;"
 })(jQuery);
 
 

@@ -1,7 +1,7 @@
 ---
 title: git and ssh
 date: 2023-03-07 18:23:41
-tags:
+tags: [git,ssh,svn]
 ---
 # 配置用户名
 ``` bash
