@@ -1,3 +1,5 @@
 /.deploy_git
 /.github
 /public
+/node_modules
+.npmignore

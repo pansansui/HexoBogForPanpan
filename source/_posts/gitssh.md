@@ -16,6 +16,7 @@ git config --global user.name "用户名"
 ``` bash 
  ssh-keygen -t rsa -C '邮箱地址'
 ``` 
+<!-- more -->
 # 查看git的用户名和邮箱
 ``` bash
  git config --global --list
